@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+@font-face {
+  font-family: "Terminator";
+  src: url("../fonts/Terminator.woff2") format("woff2"),
+    url("../fonts/Terminator.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNovaRegular.woff2") format("woff2"),
+    url("../fonts/ProximaNovaRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --pf-title-font: "Terminator", sans-serif;
+  --pf-subtitle-font: "Oswald", sans-serif;
+  --pf-body-font: "Proxima Nova", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.pf-container {
+  --padding-x: 48px;
+  --max-width: 1250px;
+
+  width: calc(100% - var(--padding-x) * 2);
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
+
+@media screen and (max-width: 1250px) {
+  .pf-container {
+    --padding-x: 24px;
+    --max-width: 1024px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .pf-container {
+    --padding-x: 16px;
+    --max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pf-container {
+    --max-width: 576px;
+  }
+}
+
+/* CTA primary Button */
+.pf-button-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #000;
+  z-index: 0;
+  transition: all linear 0.3s;
+}
+.pf-cta-button span{
+  transition: all linear 0.3s;
+}
+.pf-cta-button:hover span {
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.pf-path {
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  background: #000;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: 12px;
+  height: 12px;
+  transition: all linear 0.3s;
+}
+
+.pf-cta-button {
+  --background: #EF8B6C;
+  --border: #000;
+  padding: 16px 32px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: relative;
+  background: var(--background);
+  border: 1px solid var(--border);
+  font-family: var(--pf-subtitle-font);
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.pf-cta-button:hover .pf-button-overlay {
+  width: 100%;
+}
+
+.pf-cta-button::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  background: var(--background);
+  border-bottom: 1px solid var(--border);
+  width: 24px;
+  height: 24px;
+  transform: rotate(-49deg) translate(0%, -72%);
+}
+
+.pf-cta-button::before {
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 0;
+  background: var(--background);
+  border-top: 1px solid var(--border);
+  width: 24px;
+  height: 24px;
+  transform: rotate(-49deg) translate(0%, 72%);
+  z-index: 1;
+}
+
+.main-svg {
+  overflow: hidden;
+  transition: all linear 0.3s;
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+
+.main-svg .pf-2nd-svg {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 20%);
+  transition: all linear 0.3s;
+}
+
+.main-svg .pf-1st-svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: all linear 0.3s;
+}
+
+.pf-cta-button:hover .main-svg,
+.pf-cta-button:hover .pf-path{
+  background: #fff;
+}
+
+.pf-cta-button:hover .main-svg .pf-1st-svg {
+  top: -100%;
+}
+
+.pf-cta-button:hover .main-svg .pf-2nd-svg {
+  top: 0;
+}

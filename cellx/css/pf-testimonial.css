@@ -1,0 +1,232 @@
+/* testimonial section start */
+.pf-testimonial-section {
+    padding: 80px 0;
+    background: #EF8B6C;
+}
+
+.pf-testimonial-section .pf-testimonial-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.pf-testimonial-section .pf-testimonial-top .pf-test-sub {
+    font-family: var(--pf-subtitle-font);
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.pf-testimonial-section .pf-testimonial-top .pf-test-heading {
+    font-family: var(--pf-title-font);
+    font-weight: 500;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.pf-testimonial-section .pf-testimonial-top .pf-test-paragraph {
+    font-family: var(--pf-body-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+}
+
+.pf-testimonial-section .pf-testimonial-body {
+    font-family: var(--pf-body-font);
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.pf-testimonial-section .pf-testimonial-body .pf-testimonial-card {
+    --width: 38px;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 93% 100%, 0 100%, 0 50%);
+}
+
+.pf-testimonial-section .pf-testimonial-body .pf-testimonial-card .pf-testimonial-img {
+    height: 173px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pf-testimonial-section .pf-testimonial-body .pf-testimonial-card .pf-testimonial-cardbody {
+    padding: 24px;
+    height: 322px;
+}
+
+.pf-testimonial-section .pf-testimonial-body .pf-testimonial-card .pf-card-bottom {
+    padding: 14px 24px;
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pf-testimonial-section .pf-testimonial-body .pf-testimonial-card .pf-card-bottom .pf-gamer-wraper {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pf-testimonial-section .pf-testimonial-body .pf-testimonial-card .pf-card-bottom p {
+    font-family: var(--pf-subtitle-font);
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+}
+
+.pf-testimonial-section .pf-testimonial-body .pf-testimonial-card .pf-card-bottom span {
+    width: 31px;
+    height: 32px;
+}
+
+.pf-testimonial-section .pf-testimonial-body .pf-testimonial-card .pf-card-bottom {
+    display: flex;
+    align-items: center;
+}
+
+.pf-testimonial-section .pf-testimonial-body .pf-testimonial-card .pf-testimonial-badge {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+
+.pf-testimonial-section .pf-testimonial-body .pf-testimonial-card .pf-testimonial-badge .pf-badge {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.pf-testimonial-section .pf-testimonial-body .pf-testimonial-card .pf-testimonial-badge .pf-badge img {
+    width: 24px;
+    height: 24px;
+}
+
+.pf-testimonial-section .pf-testimonial-body .pf-testimonial-card .pf-testimonial-badge .pf-badge {
+    font-family: var(--pf-subtitle-font);
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+
+.pf-testimonial-section .pf-testimonial-swiper .swiper-slide {
+    width: 400px;
+}
+
+.pf-testimonial-section .pf-testimonial-btm-paragraph {
+    font-family: var(--pf-body-font);
+    font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+    padding-top: 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.151);
+    margin-top: 40px;
+}
+
+.pf-testimonial-cardbody .pf-accuracy-btn {
+    display: flex;
+    gap: 4px;
+    margin-top: auto;
+}
+
+.pf-testimonial-cardbody .pf-accuracy-btn .pf-btn-text {
+    font-family: var(--pf-subtitle-font);
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.pf-testimonial-cardbody .pf-accuracy-btn .pf-stat-chevrons {
+    width: 20px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.pf-testimonial-cardbody .pf-accuracy-btn .pf-stat-chevron {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms ease;
+}
+
+.pf-testimonial-cardbody .pf-accuracy-btn .pf-stat-chevron svg {
+    width: 16px;
+}
+
+.pf-testimonial-cardbody .pf-accuracy-btn:hover .pf-stat-chevron {
+    transform: translateY(-100%);
+}
+
+.pf-card-bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 95%;
+    padding-bottom: 20px;
+}
+.pf-testimonial-section .pf-cta-button-phone{
+    display: none;
+}
+@media only screen and (max-width:1020px) {
+    .pf-testimonial-section .pf-testimonial-top {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .pf-testimonial-section .pf-cta-button {
+        display: none;
+    }
+
+    .pf-testimonial-section .pf-cta-button-phone {
+        display: block;
+        width: 205px;
+    }
+
+    .pf-testimonial-section .pf-cta-button-phone {
+        display: flex;
+        margin-bottom: 16px;
+    }
+    .pf-testimonial-section .pf-testimonial-btm-paragraph{
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .pf-testimonial-section {
+        padding: 40px 0;
+    }
+    .pf-testimonial-section .pf-testimonial-top .pf-test-heading {
+        font-size: 24px;
+    }
+    .pf-cta-button{
+        padding: 20px 32px;
+    }
+    .pf-testimonial-section .pf-testimonial-top .pf-test-paragraph{
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .pf-testimonial-section .pf-testimonial-swiper .swiper-slide{
+        width: 100%;
+        padding: 0 16px;
+    }
+}
+
+/* testimonial section end */

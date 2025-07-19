@@ -1,0 +1,183 @@
+
+/* footer css start */
+
+.pf-footer-section {
+    background-color: #13181C;
+    color: #868D9A;
+    padding-top: 80px;
+}
+
+.pf-footer-section .pf-footer-content {
+    display: grid;
+    grid-template-columns: 188px 188px 2fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.pf-footer-section .pf-footer-content .pf-footer-column .pf-footer-column-title {
+    font-family: var(--pf-subtitle-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.pf-footer-section .pf-footer-content .pf-footer-column ul {
+    list-style: none;
+}
+
+.pf-footer-section .pf-footer-content .pf-footer-column ul li a {
+    text-decoration: none;
+}
+
+.pf-footer-section .pf-footer-content .pf-footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.pf-footer-section .pf-footer-content .pf-footer-column ul li:nth-last-child(1) {
+    margin: 0;
+}
+
+.pf-footer-section .pf-footer-content .pf-footer-column li a {
+    font-family: var(--pf-subtitle-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #868D9A;
+    transition: all linear 0.3s;
+}
+
+.pf-footer-section .pf-footer-content .pf-footer-column ul li a:hover {
+    color: #ffffff;
+}
+
+.pf-footer-section .pf-footer-content .pf-newsletter-section {
+    max-width: 294px;
+}
+
+.pf-footer-section .pf-footer-content .pf-newsletter-section .pf-newsletter-form {
+    display: flex;
+    gap: 0;
+    margin-top: 24px;
+}
+
+.pf-footer-section .pf-footer-content .pf-newsletter-section .pf-newsletter-form .pf-newsletter-input {
+    flex: 1;
+    padding: 16px 24px;
+    border: 1px solid #424649;
+    background-color: transparent;
+    font-family: var(--pf-subtitle-font);
+    font-weight: 400;
+    font-size: 16px;
+    color: #424649;
+    letter-spacing: 0%;
+    outline: none;
+    transition: all linear 0.3s;
+}
+
+.pf-footer-section .pf-footer-content .pf-newsletter-section .pf-newsletter-form:hover .pf-newsletter-input {
+    border-color: #fff;
+}
+
+.pf-footer-section .pf-footer-content .pf-newsletter-section .pf-newsletter-form:hover .pf-newsletter-button {
+    background-color: #fff;
+    color: #000;
+}
+
+.pf-footer-section .pf-footer-content .pf-newsletter-section .pf-newsletter-form .pf-newsletter-input::placeholder {
+    color: #424649;
+    text-transform: uppercase;
+}
+
+.pf-footer-section .pf-footer-content .pf-newsletter-section .pf-newsletter-form .pf-newsletter-button {
+    background-color: #F6563A;
+    color: #fff;
+    border: none;
+    padding: 16px 24px;
+    cursor: pointer;
+    font-family: var(--pf-subtitle-font);
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    transition: all linear .3s;
+}
+
+.pf-footer-section .pf-footer-bottom {
+    background-color: #20242C;
+    padding: 26px 0;
+}
+
+.pf-footer-section .pf-footer-bottom .pf-footer-bottom-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pf-footer-section .pf-footer-bottom .pf-footer-bottom-wrapper .pf-footer-links {
+    display: flex;
+    gap: 12px;
+}
+
+.pf-footer-section .pf-footer-bottom .pf-footer-bottom-wrapper .pf-footer-links a {
+    font-family: var(--pf-body-font);
+    font-weight: 400;
+    font-size: 14px;
+    color: #868D9A;
+    text-decoration: none;
+}
+
+.pf-footer-section .pf-footer-bottom .pf-footer-bottom-wrapper .pf-footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #868D9A;
+    letter-spacing: 2px;
+    font-family: var(--pf-body-font);
+}
+
+.pf-footer-section .pf-footer-bottom .pf-footer-bottom-wrapper .pf-footer-copyright {
+    font-family: var(--pf-body-font);
+    font-weight: 400;
+    font-size: 14px;
+    color: #868D9A;
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 820px) {
+    .pf-footer-section .pf-footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .pf-footer-section .pf-footer-bottom .pf-footer-bottom-wrapper {
+        display: flex;
+        align-items: start;
+        flex-wrap: wrap;
+        gap: 20px;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .pf-footer-section {
+        padding-top: 40px;
+    }
+
+    .pf-footer-section .pf-footer-content {
+        gap: 32px;
+    }
+
+    .pf-footer-section .pf-footer-bottom {
+        padding: 24px 0;
+    }
+
+    .pf-footer-section .pf-footer-bottom .pf-footer-bottom-wrapper {
+        gap: 24px;
+    }
+}
+
+/* footer css end */
