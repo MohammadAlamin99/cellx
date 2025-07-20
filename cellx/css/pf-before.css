@@ -1,0 +1,173 @@
+.pf-before-section {
+    background-color: #13181C;
+}
+
+.pf-before-section .pf-before-sildes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+}
+
+.pf-before-section .pf-before-wrapper {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/006/464/622/small_2x/modern-background-abstract-gaming-background-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    padding: 20px;
+    border-radius: 16px;
+    cursor: pointer;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+    transition: 300ms ease;
+}
+
+.pf-before-section .pf-before-wrapper:nth-child(2) {
+    background: url("https://www.shutterstock.com/image-vector/abstract-black-purple-gaming-banner-260nw-2321319657.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.pf-before-section .pf-before-wrapper:nth-child(2) {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.pf-before-section .pf-before-sildes .pf-before-wrapper.pf-before-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.pf-before-section .pf-before-sildes:hover .pf-before-toggle {
+    background: #fff;
+    color: #000;
+}
+
+.pf-before-section .pf-before-sildes.pf-active-btn .pf-before-toggle {
+    transform: rotate(45deg);
+}
+
+.pf-before-section .pf-before-text-wrapper .pf-before-title {
+    font-family: var(--pf-title-font);
+    font-weight: 500;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: all linear 0.3s;
+}
+
+.pf-before-section .pf-before-text-wrapper .pf-before-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1032px;
+    margin: 0 auto;
+}
+
+.pf-before-section .pf-before-text-wrapper .pf-before-tag-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding-bottom: 64px;
+    max-width: 1032px;
+    margin: 0 auto;
+}
+
+.pf-before-section .pf-before-text-wrapper .pf-before-tag-wrapper .pf-before-tag {
+    font-family: var(--pf-subtitle-font);
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    letter-spacing: 9.6px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    transition: all linear 0.3s;
+}
+
+.pf-before-section .pf-before-text-wrapper .pf-before-tag-wrapper .pf-before-tag span {
+    font-weight: 400;
+}
+
+.pf-before-section .pf-before-toggle {
+    cursor: pointer;
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: 500;
+    width: 48px;
+    height: 48px;
+    padding: 6px 12px;
+    border: 1px solid #FFFFFF;
+    background: transparent;
+    border-radius: 50%;
+    transition: all linear 0.3s;
+    position: absolute;
+    right: 108px;
+    bottom: 136px;
+}
+
+.pf-before-section .pf-before-text-wrapper {
+    border-radius: 16px;
+    padding: 89px 88px;
+    transition: all linear 0.3s;
+}
+
+.pf-before-section .pf-before-wrapper:first-child:hover .pf-before-text-wrapper,
+.pf-before-section .pf-before-sildes:hover .pf-before-first-text-wrapper {
+    background-color: #20242CD9;
+}
+
+.pf-before-section .pf-before-wrapper.pf-before-active:hover .pf-before-text-wrapper,
+.pf-before-section .pf-before-sildes:hover .pf-before-wrapper.pf-before-active .pf-before-second-text-wrapper {
+    background-color: #FFFFFFD9;
+}
+
+.pf-before-section .pf-before-sildes:hover .pf-before-wrapper.pf-before-active .pf-before-text-wrapper .pf-before-tag,
+.pf-before-section .pf-before-sildes:hover .pf-before-wrapper.pf-before-active .pf-before-text-wrapper .pf-before-title {
+    color: #000;
+}
+
+.pf-before-section .pf-before-sildes.pf-active-btn:hover .pf-before-toggle {
+    background-color: #000;
+    color: #fff;
+}
+
+@media only screen and (max-width:1250px) {
+    .pf-before-section .pf-before-text-wrapper {
+        padding: 70px 37px;
+    }
+
+    .pf-before-section .pf-before-toggle {
+        right: 6%;
+        bottom: 30%;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .pf-before-section .pf-before-text-wrapper .pf-before-title {
+        font-size: 34px;
+    }
+
+    .pf-before-section .pf-before-text-wrapper .pf-before-tag-wrapper .pf-before-tag {
+        font-size: 18px;
+    }
+
+    .pf-before-section .pf-before-toggle {
+        width: 35px;
+        height: 35px;
+        padding: 0;
+    }
+
+    .pf-before-section .pf-before-toggle {
+        right: 7%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .pf-before-section {
+        display: none;
+    }
+}
