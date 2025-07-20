@@ -112,7 +112,7 @@
     max-width: 400px;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     align-items: flex-end;
 }
@@ -159,38 +159,79 @@
 
 
 @media only screen and (max-width: 1250px) {
-    .pf-increase-section .pf-main-section-wrapper{
+    .pf-increase-section .pf-main-section-wrapper {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 32px;
     }
-    .pf-increase-section .pf-main-section-wrapper .pf-left-area{
+
+    .pf-increase-section .pf-main-section-wrapper .pf-left-area {
         max-width: 600px;
     }
 }
+
 @media only screen and (max-width: 1020px) {
-    .pf-increase-section .pf-main-section-wrapper{
+    .pf-increase-section .pf-main-section-wrapper {
         grid-template-columns: 1fr 1fr;
     }
-    .pf-increase-section .pf-main-section-wrapper .pf-left-area{
+
+    .pf-increase-section .pf-main-section-wrapper .pf-left-area {
         max-width: 500px;
     }
-    .pf-increase-section .pf-title{
+
+    .pf-increase-section .pf-title {
         font-size: 40px;
     }
 }
+
 @media only screen and (max-width: 992px) {
-    .pf-main-section-wrapper{
+    .pf-main-section-wrapper {
         display: flex !important;
         flex-direction: column;
     }
+
     .pf-increase-section .pf-main-section-wrapper .pf-left-area{
+        order: 2;
+    }
+
+    .pf-increase-section .pf-main-section-wrapper .pf-left-area {
         margin: 0 auto;
     }
-    .pf-increase-section .pf-main-section-wrapper .pf-right-area{
+
+    .pf-increase-section .pf-main-section-wrapper .pf-right-area {
         margin: 0 auto;
     }
-    .pf-increase-section .pf-main-section-wrapper .pf-chart-slider .pf-chart{
+
+    .pf-increase-section .pf-main-section-wrapper .pf-chart-slider{
+        display: none;
+    }
+
+    .pf-increase-section .pf-main-section-wrapper .pf-chart-slider .pf-chart {
         width: 100%;
+    }
+    .pf-increase-section .pf-increase-cta-button{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .pf-increase-section {
+        padding: 40px 0;
+    }
+
+    .pf-increase-section .pf-title {
+        font-size: 24px;
+    }
+
+    .pf-increase-section .pf-subtitle {
+        font-size: 14px;
+    }
+
+    .pf-increase-section .pf-pragraph {
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .pf-increase-section .pf-main-section-wrapper .pf-right-area video{
+        height: 548px;
     }
 }

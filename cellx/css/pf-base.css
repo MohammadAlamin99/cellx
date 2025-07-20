@@ -64,6 +64,9 @@ img {
   }
 }
 
+body{
+   background: #13181C;
+}
 /* CTA primary Button */
 .pf-button-overlay {
   --bg:#000;
