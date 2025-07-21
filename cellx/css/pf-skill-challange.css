@@ -1,0 +1,153 @@
+.pf-skill-challange-section {
+    padding: 80px 0;
+}
+
+.pf-skill-challange-section .pf-challange-wrapper .pf-left-area {
+    max-width: 400px;
+}
+
+.pf-skill-challange-section .pf-challange-wrapper .pf-left-area video {
+    width: 100%;
+    height: 640px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.pf-skill-challange-section .pf-challange-wrapper .pf-right-area {
+    max-width: 718px;
+}
+
+.pf-skill-challange-section .pf-challange-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pf-skill-challange-section .pf-section-title {
+    font-family: var(--pf-title-font);
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.pf-skill-challange-section .pf-section-title span {
+    color: #FFB936;
+}
+
+.pf-skill-challange-section .pf-section-desc {
+    margin-bottom: 48px;
+}
+
+.pf-skill-challange-section .pf-section-desc p {
+    font-family: var(--pf-body-font);
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.pf-skill-challange-section .pf-subtitle {
+    font-family: var(--pf-subtitle-font);
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #868D9A;
+    letter-spacing: 3.2px;
+    margin-bottom: 16px;
+}
+
+.pf-skill-challange-section .pf-formula-icontexts {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.pf-skill-challange-section .pf-formula-icontext {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pf-skill-challange-section .pf-formula-icontext img {
+    width: 24px;
+}
+
+.pf-skill-challange-section .pf-formula-icontext span {
+    color: #fff;
+    font-family: var(--pf-subtitle-font);
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.pf-skill-challange-section .pf-sill-challange-btn {
+    width: fit-content;
+    --background: #FFB936;
+    --color: #000;
+}
+
+.pf-skill-challange-section .pf-sill-challange-btn span {
+    color: #000;
+}
+
+.pf-skill-challange-section .pf-sill-challange-btn .pf-button-overlay {
+    --bg: #fff;
+}
+
+.pf-skill-challange-section .pf-sill-challange-btn:hover .pf-path {
+    --bg: #000;
+}
+
+.pf-skill-challange-section .pf-sill-challange-btn:hover .main-svg {
+    --bg: #FFB936;
+}
+
+@media only screen and (max-width:1250px) {
+    .pf-skill-challange-section .pf-challange-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .pf-skill-challange-section .pf-challange-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .pf-skill-challange-section .pf-challange-wrapper .pf-left-area {
+        margin: 0 auto;
+        padding-bottom: 24px;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .pf-skill-challange-section .pf-subtitle {
+        font-size: 14px;
+    }
+
+    .pf-skill-challange-section .pf-section-title {
+        font-size: 24px;
+    }
+
+    .pf-skill-challange-section .pf-section-desc {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    .pf-skill-challange-section .pf-section-desc,
+    .pf-skill-challange-section .pf-formula-icontexts {
+        margin-bottom: 40px;
+    }
+
+    .pf-skill-challange-section {
+        padding: 40px 0;
+    }
+    .pf-skill-challange-section .pf-challange-wrapper .pf-left-area video{
+        height: 548px;
+    }
+}
